@@ -1,5 +1,7 @@
 #include<iostream>
 #include<conio.h>
+#include <random>
+
 using namespace std;
 void upmove(int a[4][4])
 {
@@ -156,15 +158,25 @@ void addblock(int a[4][4])
 	srand(time(0));
 	while (1)
 	{
-		li = rand() % 4;
-		ri = rand() % 4;
+		std::mt19937 rng1(42);  
+
+		std::uniform_int_distribution<int> distribution1(0, 3);
+
+		int random_number1 = distribution1(rng1);
+		li = random_number1;
+
+		std::mt19937 rng2(132);
+
+		std::uniform_int_distribution<int> distribution2(0, 3);
+
+		int random_number2 = distribution2(rng2);
+		ri = random_number2;
 		if (a[li][ri] == 0)
 		{
 			a[li][ri] = pow(2, li % 2 + 1);
 			break;
 		}
 	}
-
 }
 
 void disp(int a[4][4])

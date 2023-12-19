@@ -1,0 +1,6 @@
+﻿  Source.cpp
+D:\proiectaf1\proiectAF\Project1\Project1\Source.cpp(8,12): warning C4101: 'ari': unreferenced local variable
+D:\proiectaf1\proiectAF\Project1\Project1\Source.cpp(158,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\proiectaf1\proiectAF\Project1\Project1\Source.cpp(176,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\proiectaf1\proiectAF\Project1\Project1\Source.cpp(244,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project1.vcxproj -> D:\proiectaf1\proiectAF\Project1\Debug\Project1.exe
